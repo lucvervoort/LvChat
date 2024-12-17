@@ -1,3 +1,11 @@
+LV commands:
+
+az group create --name lv_chatgroup --location "North Europe"
+az deployment group create --resource-group lv_chatgroup --template-file .\azuredeploy.bicep
+(name for chatAppName: lvchat)
+
+It is possible you need to deploy more than once!
+
 # Azure Cosmos DB Chat Sample Reference Application
 
 This is a sample application that combines Azure Cosmos DB, Azure App Service with ASP.NET Core Blazor Server, to provide a simple chat application.

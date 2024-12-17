@@ -18,7 +18,7 @@ param cosmosContainerThroughput int = 400
 var cosmosDBAccountName = '${chatAppName}-cosmos'
 var hostingPlanName = '${chatAppName}-hostingplan'
 var webSiteName = '${chatAppName}-webapp'
-var webSiteRepository = 'https://github.com/AzureCosmosDB/cosmos-chat.git'
+var webSiteRepository = 'https://github.com/lucvervoort/LvChat.git'
 var databaseName = 'ChatDatabase'
 var containerName = 'ChatContainer'
 
