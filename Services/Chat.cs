@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 
 namespace cosmoschat.Services
-{
+{ 
 
     public class ChatSession
     {
