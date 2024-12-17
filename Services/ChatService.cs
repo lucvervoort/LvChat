@@ -7,13 +7,14 @@
 
         private readonly CosmosService cosmos;
         
-        private readonly ILogger logger;
+        private readonly ILogger _logger;
 
         public ChatService(IConfiguration configuration, ILogger logger)
         {
-            logger.LogInformation("-> ChatService");
+            _logger = logger;
+            _logger.LogInformation("-> ChatService");
             cosmos = new CosmosService(configuration);
-            logger.LogInformation("<- ChatService");
+            _logger.LogInformation("<- ChatService");
         }
 
         /**

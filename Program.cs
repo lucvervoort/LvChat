@@ -8,6 +8,7 @@ internal class Program
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.Logging.ClearProviders().AddConsole();
         var loggingBuilder = builder.Logging.AddAzureWebAppDiagnostics();
         
         builder.Services.Configure<AzureFileLoggerOptions>(builder.Configuration.GetSection("AzureLogging"));
@@ -37,12 +38,12 @@ internal class Program
         app.MapFallbackToPage("/_Host");
 
 
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapBlazorHub();
-            endpoints.MapFallbackToPage("/_Host");
-            endpoints.MapHub<ChatHub>(ChatHub.HubUrl);
-        });
+        //app.UseEndpoints(endpoints =>
+        //{
+        //    endpoints.MapBlazorHub();
+        //    endpoints.MapFallbackToPage("/_Host");
+        //    endpoints.MapHub<ChatHub>(ChatHub.HubUrl);
+        //});
 
         app.Run();
     }
