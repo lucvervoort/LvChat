@@ -1,10 +1,16 @@
 using cosmoschat.Services;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging.AzureAppServices;
+using System.Configuration;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        var loggingBuilder = builder.Logging.AddAzureWebAppDiagnostics();
+        
+        builder.Services.Configure<AzureFileLoggerOptions>(builder.Configuration.GetSection("AzureLogging"));
 
         // Add services to the container.
         builder.Services.AddRazorPages();
