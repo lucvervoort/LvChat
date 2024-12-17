@@ -1,7 +1,7 @@
 param location string = resourceGroup().location
 
 @description('Name of the chat application. Needs to be unique for Cosmos DB & App Service')
-param chatAppName string
+param chatAppName string = 'lvchat'
 
 @description('Specifies App Service Sku (F1 = Free Tier)')
 param appServicesSkuName string = 'F1'
