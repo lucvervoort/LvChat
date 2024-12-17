@@ -52,7 +52,7 @@
     "cosmosDBAccountName": "[format('{0}-cosmos', parameters('chatAppName'))]",
     "hostingPlanName": "[format('{0}-hostingplan', parameters('chatAppName'))]",
     "webSiteName": "[format('{0}-webapp', parameters('chatAppName'))]",
-    "webSiteRepository": "https://github.com/AzureCosmosDB/cosmos-chat.git",
+    "webSiteRepository": "https://github.com/lucvervoort/LvChat.git",
     "databaseName": "ChatDatabase",
     "containerName": "ChatContainer"
   },

@@ -47,7 +47,7 @@ The provided ARM or Bicep Template will provision the following resources:
 All connection information for Azure Cosmos DB is injected as environment variables in the Azure App Service instance at deployment time for a zero-touch deployment.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzureCosmosDB%2Fcosmos-chat%2Fmain%2Fazuredeploy.json)
-
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzureCosmosDB%2Fcosmos-chat%2Fmain%2Fazuredeploy.json)
 
 
 ### Quickstart
