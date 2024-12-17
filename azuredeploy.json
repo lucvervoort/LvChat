@@ -15,6 +15,7 @@
     },
     "chatAppName": {
       "type": "string",
+      "default": "lvchat",
       "metadata": {
         "description": "Name of the chat application. Needs to be unique for Cosmos DB & App Service"
       }
